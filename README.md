@@ -1,4 +1,28 @@
+# Description
+
+Playing with ansible.
+
+## VM description:
+
+ - OS: Scientific linux 6
+ - vm: skel.farm
+
+## Howto
+
+ - create SL6 box using [vbkick-boxarium](https://github.com/wilas/vbkick-boxarium)
+ - copy ssh_keys from [ssh-gerwazy](https://github.com/wilas/ssh-gerwazy)
+ - install ansible on your master host (e.g. Desktop)
+
+```
+    vagrant up
+    ssh root@77.77.77.31
+    vagrant destroy
+```
+
 ## Bibliography
 
- - http://ansible.cc/docs/gettingstarted.html
- - http://www.rripado.info/blog/virtualized-local-lamp-stacks-with-vagrant-veewee-and-ansible/?goback=.gmp_4648083
+ - how to install ansible: http://ansible.cc/docs/gettingstarted.html
+ - !! ansible as vagrant provisioner: http://docs.vagrantup.com/v2/provisioning/ansible.html
+ - vagrant machine settings: http://docs.vagrantup.com/v2/vagrantfile/machine_settings.html
+ - vagrant provider configruation: http://docs.vagrantup.com/v2/providers/configuration.html
+ - examples: https://github.com/gaspaio/ansible-repository
