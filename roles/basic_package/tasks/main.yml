@@ -12,7 +12,6 @@
     - 'ruby-devel'
     - 'rubygems'
 
-
 - name: install vagrant box packages
   yum: name={{ item }} state=latest
   with_items:

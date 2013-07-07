@@ -2,8 +2,12 @@
 - hosts: vagrant
   user: vagrant
   sudo: yes
+  vars_files:
+    - "vars/sample-{{ ansible_os_family }}.yml"
 
   roles:
-    - yum_repos
-    - basic_package
+    - { role: yum_repos, when: "ansible_os_family == 'RedHat'" }
+    - { role: basic_package, when: "ansible_os_family == 'RedHat'" }
     - users
+    - { role : sample, role_param : 'param-value' }
+    #- { role : sample, role_param : 'param-value', role_variable : 'role-variable-from-param' }

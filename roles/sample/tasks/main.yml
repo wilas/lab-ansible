@@ -1,0 +1,2 @@
+- name: creates sample /tmp/ansible_out.txt file
+  template: src=sample.j2 dest=/tmp/ansible_out.txt

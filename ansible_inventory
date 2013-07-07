@@ -1,2 +1,5 @@
 [vagrant]
 77.77.77.31
+
+[vagrant:vars]
+inventory_variable='inventory-variable-vagrant'
