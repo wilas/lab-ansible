@@ -16,6 +16,7 @@ Playing with ansible.
 ```
     vagrant up
     ssh root@77.77.77.31
+    ansible all -m ping -i ansible_inventory -u vagrant -k #password=vagrant
     vagrant destroy
 ```
 
@@ -26,5 +27,6 @@ Playing with ansible.
  - vagrant machine settings: http://docs.vagrantup.com/v2/vagrantfile/machine_settings.html
  - vagrant provider configruation: http://docs.vagrantup.com/v2/providers/configuration.html
  - ansible best practice: http://www.ansibleworks.com/docs/bestpractices.html
+ - !! ansible docs: http://www.ansibleworks.com/docs/
  - !! ansible examples: https://github.com/ansible/ansible-examples
  - ansible examples: https://github.com/gaspaio/ansible-repository

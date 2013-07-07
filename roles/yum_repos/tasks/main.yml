@@ -1,0 +1,20 @@
+- name: copy EL rpm-gpg repo key
+  copy: src=RPM-GPG-KEY-elrepo.org dest=/etc/pki/rpm-gpg/RPM-GPG-KEY-elrepo.org owner=root group=root mode=0444
+
+- name: copy EPEL-6 rpm-gpg repo key
+  copy: src=RPM-GPG-KEY-EPEL-6 dest=/etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6 owner=root group=root mode=0444
+
+- name: copy puppetlabs rpm-gpg repo key
+  copy: src=RPM-GPG-KEY-puppetlabs dest=/etc/pki/rpm-gpg/RPM-GPG-KEY-puppetlabs owner=root group=root mode=0444
+
+- name: configure el repo
+  copy: src=elrepo.repo dest=/etc/yum.repos.d/elrepo.repo owner=root group=root mode=0644
+
+- name: configure epel repo
+  copy: src=epel.repo dest=/etc/yum.repos.d/epel.repo owner=root group=root mode=0644
+
+- name: configure epel-testing repo
+  copy: src=epel-testing.repo dest=/etc/yum.repos.d/epel-tesing.repo owner=root group=root mode=0644
+
+- name: configure puppetlabs repo
+  copy: src=puppetlabs.repo dest=/etc/yum.repos.d/puppetlabs.repo owner=root group=root mode=0644

@@ -1,0 +1,29 @@
+- name: install yum basic packages
+  yum: name={{ item }} state=latest
+  with_items:
+    - 'wget'
+    - 'openssh-clients'
+    - 'mc'
+    - 'vim-common'
+    - 'git'
+    - 'tmux'
+    - 'iptables'
+    - 'ruby'
+    - 'ruby-devel'
+    - 'rubygems'
+
+
+- name: install vagrant box packages
+  yum: name={{ item }} state=latest
+  with_items:
+    - 'gcc'
+    - 'gcc-c++'
+    - 'kernel-devel'
+    - 'make'
+    - 'bzip2'
+    - 'curl'
+#    - 'dkms'
+#    - 'zlib-devel'
+#    - 'openssl-devel'
+#    - 'readline-devel'
+#    - 'sqlite-devel'

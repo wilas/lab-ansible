@@ -1,7 +1,9 @@
 ---
 - hosts: vagrant
   user: vagrant
-  sudo: True
+  sudo: yes
 
   roles:
+    - yum_repos
+    - basic_package
     - users
