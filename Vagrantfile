@@ -21,8 +21,11 @@ Vagrant.configure("2") do |config|
     node_config.vm.synced_folder ".", "/vagrant"
 
     node_config.vm.provision :ansible do |ansible|
+        # Ansible playbook
         ansible.playbook = "playbook.yaml"
+        # Inventory file
         ansible.inventory_file = "ansible_inventory"
+        # Show me more
         ansible.verbose = true
     end
   end

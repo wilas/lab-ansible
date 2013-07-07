@@ -1,0 +1,12 @@
+- name: installs dotfiles for root
+  copy: src=root/{{ item }} dest=/root/.{{ item }} owner=root group=root
+  with_items:
+    - bashrc
+    - tmux.conf
+    - vimrc
+
+- name: creates .ssh directory for root
+  file: path=/root/.ssh/ owner=root group=root state=directory mode=0700
+
+- name: install ssh authorized keys for root
+  copy: src=root/authorized_keys dest=/root/.ssh/authorized_keys owner=root group=root mode=0600

@@ -25,4 +25,6 @@ Playing with ansible.
  - !! ansible as vagrant provisioner: http://docs.vagrantup.com/v2/provisioning/ansible.html
  - vagrant machine settings: http://docs.vagrantup.com/v2/vagrantfile/machine_settings.html
  - vagrant provider configruation: http://docs.vagrantup.com/v2/providers/configuration.html
- - examples: https://github.com/gaspaio/ansible-repository
+ - ansible best practice: http://www.ansibleworks.com/docs/bestpractices.html
+ - !! ansible examples: https://github.com/ansible/ansible-examples
+ - ansible examples: https://github.com/gaspaio/ansible-repository
