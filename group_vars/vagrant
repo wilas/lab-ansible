@@ -1,2 +1,4 @@
 ---
-group_variable: 'group_var-vagrant'
+var11 : 'value_from_group_var-vagrant'
+var20 : 'value_from_group_var-vagrant'
+var21 : 'value_from_group_var-vagrant'

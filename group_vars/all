@@ -1,2 +1,3 @@
 ---
-group_variable: 'group_var-all'
+var10 : 'value_from_group_var-all'
+var11 : 'value_from_group_var-all'

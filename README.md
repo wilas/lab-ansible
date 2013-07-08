@@ -21,6 +21,12 @@ Playing with ansible.
     vagrant destroy
 ```
 
+## Todo:
+
+use variable1, variable2... etc. check what overwrite what...
+var_inventory -> group_var -> host_var -> var_files -> role/vars -> role/param
+apache + sl01,sl02 -> different vhosts
+
 ## Bibliography
 
  - how to install ansible: http://ansible.cc/docs/gettingstarted.html

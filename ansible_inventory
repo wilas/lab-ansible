@@ -2,4 +2,7 @@
 77.77.77.31
 
 [vagrant:vars]
-inventory_variable='inventory-variable-vagrant'
+var31='value_from_inventory'
+var40='value_from_inventory'
+var41='value_from_inventory'
+var61='value_from_inventory'

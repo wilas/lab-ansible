@@ -3,11 +3,12 @@
   user: vagrant
   sudo: yes
   vars_files:
-    - "vars/sample-{{ ansible_os_family }}.yml"
+    - "vars_files/sample-C-{{ ansible_os_family }}.yml"
+    - "vars_files/sample-A-{{ ansible_os_family }}.yml"
+    - "vars_files/sample-B-{{ ansible_os_family }}.yml"
 
   roles:
-    - { role: yum_repos, when: "ansible_os_family == 'RedHat'" }
-    - { role: basic_package, when: "ansible_os_family == 'RedHat'" }
+    #- { role: yum_repos, when: "ansible_os_family == 'RedHat'" }
+    #- { role: basic_package, when: "ansible_os_family == 'RedHat'" }
     - users
-    - { role : sample, role_param : 'param-value' }
-    #- { role : sample, role_param : 'param-value', role_variable : 'role-variable-from-param' }
+    - { role : sample, var51 : 'value_from_role_param', var60 : 'value_from_role_param', var61 : 'value_from_role_param' }

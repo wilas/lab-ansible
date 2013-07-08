@@ -1,2 +1,4 @@
 ---
-role_variable : 'role-variable-default'
+var41 : 'value_from_role_vars-main'
+var50 : 'value_from_role_vars-main'
+var51 : 'value_from_role_vars-main'
