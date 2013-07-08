@@ -49,6 +49,6 @@ var11 | var11 | -     | -     | -     | -     | -     | -
 ## Summary:
 
  * var10-var50  <-> custom facts
- * var60        <-> puppet defaults values (default hiera vaules as well) in manifest
- * var70        <-> puppet parameters
+ * var60        <-> like puppet defaults values (default hiera vaules as well) in manifest
+ * var70        <-> like puppet parameters
  * var80-var91  <-> like puppet hiera (override default modules values)
