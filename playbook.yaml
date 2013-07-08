@@ -2,13 +2,22 @@
 - hosts: vagrant
   user: vagrant
   sudo: yes
+  vars:
+    var41 : "value_from_playbook_vars"
+    var50 : "value_from_playbook_vars"
+    var51 : "value_from_playbook_vars"
   vars_files:
     - "vars_files/sample-C-{{ ansible_os_family }}.yml"
     - "vars_files/sample-A-{{ ansible_os_family }}.yml"
     - "vars_files/sample-B-{{ ansible_os_family }}.yml"
 
   roles:
-    #- { role: yum_repos, when: "ansible_os_family == 'RedHat'" }
-    #- { role: basic_package, when: "ansible_os_family == 'RedHat'" }
+    # grrrr... doesn't work...
+    #- "{{ ansible_os_family }}/yum_repos"
+    #- "{{ ansible_os_family }}/basic_package"
+    #- Common/users
+    #
+    - { role: yum_repos, when: "ansible_os_family == 'RedHat'" }
+    - { role: basic_package, when: "ansible_os_family == 'RedHat'" }
     - users
-    - { role : sample, var51 : 'value_from_role_param', var60 : 'value_from_role_param', var61 : 'value_from_role_param' }
+    - { role : sample, var61 : 'value_from_role_param', var70 : 'value_from_role_param', var71 : 'value_from_role_param' }
