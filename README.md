@@ -17,10 +17,11 @@ Playing with ansible.
     vagrant up
     ssh root@77.77.77.31
     ansible all -m ping -i ansible_inventory -u vagrant -k #password=vagrant; check inventory
-    ansible all -m setup -i ansible_inventory -u vagrant -k #gather facts
+    ansible all -m setup -i ansible_inventory -u vagrant -k #gather facts; just to see output
     vagrant provision #playing time
     vagrant destroy
 ```
+ - [experiment](NOTES.md)
 
 ## Bibliography
 
