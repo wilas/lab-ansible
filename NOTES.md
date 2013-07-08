@@ -5,7 +5,7 @@
 
 ## Input Table
 
-group_vars-all | group_vars-vagrant | host_vars | inventory_vars | playbook_vars | role_vars | role_param | vars_files (CAB - import rev. order)
+gr_vars-all | gr_vars-vagrant | host_vars | invt_vars | pbook_vars | role_vars | role_param | vars_files (CAB - import rev. order)
 --- | --- | --- | --- | --- | --- | --- | ---
 var10 | -     | -     | -     | -     | -     | -     | -
 var11 | var11 | -     | -     | -     | -     | -     | -
