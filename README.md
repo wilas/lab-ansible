@@ -31,6 +31,7 @@ Playing with ansible.
  - roles: http://www.ansibleworks.com/docs/playbooks.html/#roles
  - variable precedence: http://www.ansibleworks.com/docs/playbooks2.html#understanding-variable-precedence
  - !! ansible best practice: http://www.ansibleworks.com/docs/bestpractices.html
+ - ! ansible in action - live demo: http://www.youtube.com/watch?v=up3ofvQNm8c
 
 ### examples
  - !! ansible examples: https://github.com/ansible/ansible-examples
